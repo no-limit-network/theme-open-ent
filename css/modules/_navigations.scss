@@ -196,7 +196,15 @@ nav.vertical,
                     margin-left: 5px;
                     text-indent: 8px;
                 }
-
+                i.close,
+                i.edit {
+                    position: absolute;
+                    right: 5px;
+                    top: 1px;
+                }
+                i.edit, i.suspended-icon {
+                    right: 30px;
+                }
             }
             a.selected {
                 color: $accent;
