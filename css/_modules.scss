@@ -804,43 +804,6 @@ filters {
     text-align: left;
 }
 
-
-.datepicker {
-    padding: 0;
-    table {
-        line-height: 30px;
-        thead {
-            tr {
-                background: $primary;
-                th {
-                    color: white;
-                }
-                th:hover {
-                    background: $accent !important;
-                }
-            }
-        }
-        tr {
-            background: $white;
-            border-bottom: 1px solid $shadow-light;
-            td,
-            td:first-child,
-            th {
-                width: 25px;
-                font-size: 12px;
-            }
-            .active {
-                background: $accent;
-            }
-            td:hover {
-                background: $primary-light !important;
-            }
-        }
-    }
-}
-
-
-
 .user-infos {
     .avatar {
         margin-right: 15px;

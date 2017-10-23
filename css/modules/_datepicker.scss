@@ -1,0 +1,90 @@
+.datepicker {
+  width: 310px;
+  background: none !important;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 45px, rgba(0, 0, 0, 0.22) 0px 10px 18px;
+
+  &:after, &:before {
+    content: none;
+  }
+
+  table {
+    thead {
+      tr {
+        background: $primary-dark;
+
+        &:hover {
+          background: $primary-dark !important;
+        }
+
+        th:hover {
+          background: $primary-dark !important;
+        }
+
+        .switch {
+          height: 80px;
+          font-size: 24px;
+          font-weight: 300;
+        }
+
+        .prev, .next {
+          font-size: 30px;
+          min-width: 45px;
+        }
+      }
+    }
+    tr {
+      height: 44px;
+      border: none;
+
+      &:hover {
+        background-color: inherit;
+      }
+
+      td {
+        &.day {
+          width: 44px;
+          padding: 0 !important;
+          transition: all 0.5s ease;
+          border-radius: 50%;
+
+          &:hover {
+            background: $primary-lighter !important;
+          }
+
+          &.active {
+            background: $primary-dark !important;
+          }
+
+          &.old, &.new {
+            color: $light-grey;
+
+            &:hover {
+              background: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .datepicker-months, .datepicker-years {
+    span {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      margin: 16px;
+
+      &.active {
+        background: $primary-dark !important;
+      }
+
+      &:hover {
+        background: $primary-lighter !important;
+      }
+    }
+  }
+}
